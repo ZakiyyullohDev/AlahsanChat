@@ -90,3 +90,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
         window.location.href = "login.html"
     }
 })
+
+logOutBtn.addEventListener('click', ()=> {
+    localStorage.clear()
+    window.location.href = 'login.html'
+})
+
