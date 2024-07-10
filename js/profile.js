@@ -84,3 +84,9 @@ editerBtnPassword.addEventListener('click', ()=> {
         }
     })
 })
+
+document.addEventListener('DOMContentLoaded', ()=> {
+    if (!localStorage.key("UserName")) {
+        window.location.href = "login.html"
+    }
+})

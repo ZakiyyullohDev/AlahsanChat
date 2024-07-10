@@ -40,3 +40,9 @@ const loggedUserImgs = document.querySelectorAll('#loggedUserImg');
 loggedUserImgs.forEach(loggedUserImg => {
     loggedUserImg.src = localStorage.getItem("UserImgSource")
 })
+
+document.addEventListener('DOMContentLoaded', ()=> {
+    if (!localStorage.key("UserName")) {
+        window.location.href = "login.html"
+    }
+})
