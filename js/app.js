@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "😧", "😨", "😩", "😬", "😰", "😱", "😳", "🤯", "😵", "😡", "😠", "🤬", "😷", "🤒", "🤕", "🤢", "🤮", "🤧", "😇",
         "🥳", "🥺", "🥵", "🥶", "🥴", "🤠", "🥳", "🥸"
     ];
-
+    
     const messageSenderInput = document.getElementById("messageSenderInput");
     const showEmojisBtn = document.getElementById("showEmojisBtn");
     const emojiContainer = document.getElementById("emojiContainer");
-
+    
     showEmojisBtn.addEventListener("click", (event) => {
         event.stopPropagation();
         emojiContainer.classList.toggle("display-none");
@@ -28,10 +28,15 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
     });
-
+    
     document.addEventListener('click', (event) => {
         if (!emojiContainer.classList.contains("display-none") && !emojiContainer.contains(event.target) && !showEmojisBtn.contains(event.target)) {
             emojiContainer.classList.add('display-none');
         }
     });
 });
+
+const loggedUserImgs = document.querySelectorAll('#loggedUserImg');
+loggedUserImgs.forEach(loggedUserImg => {
+    loggedUserImg.src = localStorage.getItem("UserImgSource")
+})

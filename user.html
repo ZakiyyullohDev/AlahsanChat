@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil</title>
-    <link rel="icon" href="logo-icon.png">
+    <link rel="icon" href="img/icons/profile-icon.png">
     <link rel="stylesheet" href="css/user.css">
     <link rel="stylesheet" href="css/global.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
@@ -34,9 +34,10 @@
         <div class="user-profile">
             
             <div class="profile-user-img-wrapper">
-                <img class="user-profile-img" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="Tom Holland" width="200" height="200">
+                <input class="display-none" type="file" accept="image/png, image/jpg, image/jpeg, image/webp" id="userImgUpload">
+                <img id="profileImg" class="user-profile-img" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="Elon Musk" width="200" height="200">
                 <div class="edit-and-save-btn-wrapper">
-                    <button class="img-edit-btn" id="imgEditBtn">Rasmni O'zgartirish</button>
+                    <label class="img-edit-btn" for="userImgUpload" id="imgEditBtn">Rasmni O'zgartirish</label>
                     <button class="img-save-btn" id="imgSaveBtn">Rasmni Saqlash</button>
                 </div>
             </div>
@@ -51,20 +52,20 @@
                     </button>
                 </div>
                 
-                <div class="user-phone-number-wrapper">
-                    <i class="ri-phone-fill phone-icon"></i>
-                    <p class="user-phone-number-label label">Telefon Raqamingiz:</p>
-                    <p class="user-phone-number" id="userPhoneNumber">+1 888 518 3752</p>
-                    <button class="editer-btn-2" id="editerBtnNumber">
+                <div class="user-email-wrapper">
+                    <i class="ri-mail-line mail"></i>
+                    <p class="user-email-label label">E-mailingiz:</p>
+                    <p class="user-email" id="userEmail">elonmusk@gmail.com</p>
+                    <button class="editer-btn-2" id="editerBtnEmail">
                         <i class="ri-pencil-fill"></i>
                     </button>
                 </div>
                 
-                <div class="user-at-name-wrapper">
-                    <i class="ri-at-line at-icon"></i>
-                    <p class="user-at-name-label label">Username:</p>
-                    <p class="user-at-name" id="userAtName">@elonmusk</p>
-                    <button class="editer-btn-3" id="editerBtnAt">
+                <div class="user-password-name-wrapper">
+                    <i class="ri-lock-line password-icon"></i>
+                    <p class="user-password-name-label label">Parolingiz:</p>
+                    <p class="user-password-name" id="userPassword">1571515z</p>
+                    <button class="editer-btn-3" id="editerBtnPassword">
                         <i class="ri-pencil-fill"></i>
                     </button>
                 </div>
@@ -73,6 +74,8 @@
         </div>
         
     </main>
-    
+
+
+    <script src="js/profile.js"></script>
 </body>
 </html>

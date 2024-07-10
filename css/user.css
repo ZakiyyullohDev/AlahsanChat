@@ -58,13 +58,13 @@
     justify-content: space-between;
 }
 
-.user-phone-number-wrapper {
+.user-email-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.user-at-name-wrapper {
+.user-password-name-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,7 +74,7 @@
     font-size: 32px;
 }
 
-.at-icon {
+.password-icon {
     font-size: 32px;
 }
 
@@ -150,7 +150,16 @@
     cursor: pointer;
     font-size: 16px;
     padding: 5px 10px;
+    line-height: 1.4;
     margin-right: 20px;
     border: 2px solid #fff;
     background-color: transparent;
+}
+
+.mail {
+    font-size: 32px;
+}
+
+.password-icon {
+    font-size: 32px;
 }
