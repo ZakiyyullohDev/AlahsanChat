@@ -1,0 +1,156 @@
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-profile-img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    cursor: pointer;
+    object-fit: cover;
+    user-select: none;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.logo-a-img {
+    width: 70px;
+    height: 70px;
+    box-shadow: 0;
+    display: block;
+    margin-right: 0;
+    object-fit: cover;
+    user-select: none;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px dotted #fff;
+}
+
+.profile-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-name-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-phone-number-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-at-name-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone-icon {
+    font-size: 32px;
+}
+
+.at-icon {
+    font-size: 32px;
+}
+
+.label {
+    margin-right: 7px;
+}
+
+.editer-btn-1:focus {
+    outline: none;
+}
+
+.editer-btn-1 {
+    border: 0;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.editer-btn-2:focus {
+    outline: none;
+}
+
+.editer-btn-2 {
+    border: 0;
+    color: #fff;
+    font-size: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.editer-btn-3:focus {
+    outline: none;
+}
+
+.editer-btn-3 {
+    border: 0;
+    color: #fff;
+    font-size: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.profile-user-img-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.edit-and-save-btn-wrapper {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-edit-btn {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+
+.img-save-btn {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    background-color: transparent;
+}
