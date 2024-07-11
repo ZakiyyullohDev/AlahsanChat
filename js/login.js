@@ -40,6 +40,7 @@ loginBtn.addEventListener('click', ()=> {
     setNameToStorage()
     setPasswordToStorage()
     setEmailToStorage()
+    window.location.href = "index.html"
     
 })
 
@@ -81,5 +82,3 @@ passwordShowHideBtn.addEventListener('click', () => {
     eyeIcon.classList.toggle("ri-eye-line");
     eyeIcon.classList.toggle("ri-eye-off-line");
 });
-
-// show hide btn > i class ri-eye-off-line

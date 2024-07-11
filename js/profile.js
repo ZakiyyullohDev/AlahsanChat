@@ -11,6 +11,7 @@ const editerBtn = document.getElementById('editerBtn');
 const editerBtnName = document.getElementById('editerBtnName');
 
 const imgSaveBtn = document.getElementById('imgSaveBtn');
+const logOutBtn = document.getElementById('logOutBtn');
 
 userImgUpload.onchange = () => {
     const imageUrl = URL.createObjectURL(userImgUpload.files[0]);
@@ -95,4 +96,3 @@ logOutBtn.addEventListener('click', ()=> {
     localStorage.clear()
     window.location.href = 'login.html'
 })
-

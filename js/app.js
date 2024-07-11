@@ -38,7 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const loggedUserImgs = document.querySelectorAll('#loggedUserImg');
 loggedUserImgs.forEach(loggedUserImg => {
-    loggedUserImg.src = localStorage.getItem("UserImgSource")
+    if (localStorage.getItem("UserImgSource")) {
+        loggedUserImg.src = localStorage.getItem("UserImgSource")
+        return ''
+    }
+    loggedUserImg.src = 'https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg'
 })
 
 document.addEventListener('DOMContentLoaded', ()=> {
