@@ -503,6 +503,28 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sendingImg {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 530px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.sendingVideo {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 530px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.sendingAudio {
+    width: 100%;
+    height: 100px;
+    max-width: 300px;
+    max-height: 530px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
