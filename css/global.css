@@ -281,7 +281,9 @@ img {
 }
 
 .messages-li {
+    width: 1360px;
     display: flex;
+    position: relative;
     margin-bottom: 30px;
     flex-direction: column;
     align-items: flex-start;
@@ -309,7 +311,7 @@ img {
 .message-sender-inputs-wrapper {
     bottom: 0; 
     height: 90px;
-    width: 1395px;
+    width: 1410px;
     display: flex;
     position: fixed;
     margin-left: auto;
@@ -527,3 +529,20 @@ body::-webkit-scrollbar-thumb {
     color: #ff7500;
     background: transparent;
 }
+
+.message-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delete-btn {
+    right: 0;
+    top: 50%;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 32px;
+    position: absolute;
+    background-color: transparent;
+} 

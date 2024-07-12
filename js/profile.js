@@ -25,9 +25,11 @@ imgSaveBtn.addEventListener('click', () => {
     try {
         if (profileImg.src) {
             localStorage.setItem("UserImgSource", profileImg.src);
-        } else {
-            alert("Xatolik Yuz Berdi. Iltimos Keyinroq Urinib Ko'ring!");
+            alert("Rasm Saqlandi!")
+            return ''
         }
+        alert("Xatolik Yuz Berdi. Iltimos Keyinroq Urinib Ko'ring!");
+        
     } catch (error) {
         console.error(error);
         alert("Xatolik Yuz Berdi. Iltimos Keyinroq Urinib Ko'ring!");

@@ -9,15 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
-    
     <header class="header">
-        
         <div class="head-top-wrapper">
-            
             <div class="head-top-left">
                 <div class="user-profile">
                     <a class="user-a" href="user.html">
-                        <img class="user-a-img" id="loggedUserImg" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="Tom Holland" width="50" height="50">
+                        <img class="user-a-img" id="loggedUserImg" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="ZakiyDev" width="50" height="50">
                     </a>
                 </div>
                 <div class="search-input-wrapper">
@@ -32,21 +29,17 @@
                     <p class="user-status online">Online</p>
                 </div>
             </div>
-            
         </div>
-        
-        
     </header>
     
     <main class="main">
-        
         <div class="application-wrapper">
             <div class="users">
                 <ul class="users-ul" id="usersUl">
-                    <li class="users-li" id="usersLi">
+                    <li class="users-li">
                         <a class="users-li-a" href="user-tom-holland.html">
                             <div class="user-img-wrapper">
-                                <img class="user-img" id="userImg" src="img/users-img/tom-holland.jpg" alt="Tom Holland" width="50" height="50">
+                                <img class="user-img" src="img/users-img/tom-holland.jpg" alt="Tom Holland" width="50" height="50">
                                 <div class="user-info-wrapper">
                                     <p class="user-name">Tom Holland</p>
                                     <p class="user-status online">Online</p>
@@ -62,36 +55,59 @@
                     <div class="today-date-wrapper">
                         <p class="today-date">Bugun</p>
                     </div>
-
-                    <li class="messages-li" id="messages-li">
+                    
+                    <li class="messages-li">
                         <img class="user-img chat-user-img" src="img/users-img/tom-holland.jpg" alt="Tom Holland" width="70" height="70">
-                        <h2 class="user-message messages">Hello Bro.</h2>
+                        <div class="message-text-wrapper">
+                            <h2 class="user-message messages">Hello Bro.</h2>
+                            <button class="delete-btn display-none">
+                                <i class="ri-delete-bin-line"></i>
+                            </button>
+                        </div>
                     </li>
-                    <li class="messages-li" id="messages-li">
+                    <li class="messages-li">
                         <img class="user-img chat-user-img" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" id="loggedUserImg" alt="Tom Holland" width="70" height="70">
-                        <h2 class="other-user-message messages">Hello.</h2>
+                        <div class="message-text-wrapper">
+                            <h2 class="other-user-message messages">Hello.</h2>
+                            <button class="delete-btn display-none">
+                                <i class="ri-delete-bin-line"></i>
+                            </button>
+                        </div>
                     </li>
-                    <li class="messages-li" id="messages-li">
+                    <li class="messages-li">
                         <img class="user-img chat-user-img" src="img/users-img/tom-holland.jpg" alt="Tom Holland" width="70" height="70">
-                        <h2 class="user-message messages">How Are You ?</h2>
+                        <div class="message-text-wrapper">
+                            <h2 class="user-message messages">How Are You ?</h2>
+                            <button class="delete-btn display-none">
+                                <i class="ri-delete-bin-line"></i>
+                            </button>
+                        </div>
                     </li>
-                    <li class="messages-li" id="messages-li">
+                    <li class="messages-li">
                         <img class="user-img chat-user-img" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" id="loggedUserImg" alt="Tom Holland" width="70" height="70">
-                        <h2 class="other-user-message messages">Good 😑.</h2>
+                        <div class="message-text-wrapper">
+                            <h2 class="other-user-message messages">Good 😑.</h2>
+                            <button class="delete-btn display-none">
+                                <i class="ri-delete-bin-line"></i>
+                            </button>
+                        </div>
                     </li>
-                    <li class="messages-li" id="messages-li">
+                    <li class="messages-li">
                         <img class="user-img chat-user-img" src="img/users-img/tom-holland.jpg" alt="Tom Holland" width="70" height="70">
-                        <h2 class="user-message messages">Why are you sad 🤨 ?</h2>
+                        <div class="message-text-wrapper">
+                            <h2 class="user-message messages">Why are you sad 🤨 ?</h2>
+                            <button class="delete-btn display-none">
+                                <i class="ri-delete-bin-line"></i>
+                            </button>
+                        </div>
                     </li>
-
-
-
+                    
                     <div id="emojiContainer" class="emojiContainer display-none"></div>
                 </ul>
                 <div class="message-sender-inputs-wrapper">
                     <div class="wrapper">
                         <input type="text" id="messageSenderInput" class="messageSenderInput" placeholder="Xabar:">
-                        <input class="display-none" type="file" id="imgSendinput" accept="image/jpeg, image/png, image/jpg, image/webp">
+                        <input class="display-none" type="file" id="imgSendinput" accept="image/jpeg, image/png, image/jpg, image/webp, audio/*, video/*" multiple>
                         <label class="imgUploadLabel" for="imgSendinput" id="imgSendInputsLabel"><i class="ri-upload-2-line imgUploadIcon"></i></label>
                         <button class="showEmojisBtn" id="showEmojisBtn"><i class="ri-emoji-sticker-line emojiIcon"></i></button>
                         <button class="senderBtn" id="senderBtn">
@@ -99,12 +115,10 @@
                         </button>
                     </div>
                 </div>
-                
             </div>
         </div>
-        
     </main>
-
+    
     <div class="modal" id="modal">
         <div class="modal-top">
             <h2 class="modal-title">Rasm Yuborish</h2>
@@ -113,18 +127,14 @@
             </button>
         </div>
         <img class="sendingImg" id="sendingImg" src="img/backgrounds/logo-3.png" alt="imgSend" width="300" height="150">
-        <div class="imgSendInputWrapper">
-            <input type="text" class="imgSendinput" id="imgTextSendinput" placeholder="Xabar Kiriting:">
-            <button class="imgSendBtn" id="imgSendBtn">
-                <i class="ri-send-plane-fill"></i>
-            </button>
-        </div>
+        <button class="imgSendBtn" id="imgSendBtn">
+            <i class="ri-send-plane-fill"></i>
+        </button>
     </div>
-
+    
     <div class="overlay display-none" id="overlay"></div>
     
     <script src="js/app.js"></script>
     <script src="js/chat.js"></script>
-    <!-- <script src="js/profile.js"></script> -->
 </body>
 </html>
