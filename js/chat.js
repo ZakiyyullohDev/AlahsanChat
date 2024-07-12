@@ -96,19 +96,19 @@ const getChatFromStorage = () => {
         if (img) {
             const imgToSend = document.createElement('img');
             imgToSend.src = img;
+            sendingImg.src = img;
             imgToSend.classList.add('sendingImg');
             imgToSend.setAttribute('width', 300);
             imgToSend.setAttribute('height', 150);
             newMessageLi.appendChild(imgToSend);
         }
         
-        // Delete button
         const deleteBtn = document.createElement('button');
         deleteBtn.classList.add('delete-btn', 'display-none');
         deleteBtn.innerHTML = '<i class="ri-delete-bin-line"></i>';
         deleteBtn.addEventListener('click', () => {
             newMessageLi.remove();
-            deleteChatFromStorage(chat); // Add this if you want to remove from localStorage
+            deleteChatFromStorage(chat);
         });
         newMessageLi.appendChild(deleteBtn);
 
