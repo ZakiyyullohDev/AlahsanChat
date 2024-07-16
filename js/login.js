@@ -51,7 +51,7 @@ passwordInput.addEventListener('keydown', (e)=> {
             return ''
         }
         if (userName.includes(usernameInput.value.trim())) {
-            window.location.href = "index.html" 
+            window.location.href = "index.html"
             return ''
         } 
         

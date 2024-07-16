@@ -4,6 +4,8 @@ const senderBtn = document.getElementById('senderBtn');
 
 const imgSendInputsLabel = document.getElementById('imgSendInputsLabel');
 const imgTextSendinput = document.getElementById('imgTextSendinput');
+const todayDateWrapper = document.getElementById('todayDateWrapper');
+const selectDateInput = document.getElementById('selectDateInput');
 const imgSendinput = document.getElementById('imgSendinput');
 const sendingMedia = document.getElementById('sendingMedia'); 
 const imgSendBtn = document.getElementById('imgSendBtn');
@@ -11,6 +13,37 @@ const sendingImg = document.getElementById('sendingImg');
 const closeBtn = document.getElementById('closeBtn');
 const overlay = document.getElementById('overlay');
 const modal = document.getElementById('modal');
+
+const dateModal = document.getElementById('dateModal');
+const dateCloseBtn = document.getElementById('dateCloseBtn');
+const todayDate = document.getElementById('todayDate');
+
+todayDate.addEventListener('click', ()=> {
+    dateModal.style.display = 'flex'
+    overlay.style.display = 'flex'
+    todayDateWrapper.style.zIndex = '0'
+})
+
+dateCloseBtn.addEventListener("click", ()=> {
+    dateModal.style.display = 'none'
+    overlay.style.display = 'none'
+    todayDateWrapper.style.zIndex = '1'
+})
+
+overlay.addEventListener("click", ()=> {
+    dateModal.style.display = 'none'
+    overlay.style.display = 'none'
+    todayDateWrapper.style.zIndex = '1'
+})
+
+selectDateInput.addEventListener('keydown', (e)=> {
+    if (e.key === "Enter" ) {
+        alert(selectDateInput.value)
+        overlay.style.display = 'none'
+        dateModal.style.display = 'none'
+    todayDateWrapper.style.zIndex = '1'
+    }
+})
 
 let mediaType = '';
 
@@ -22,26 +55,26 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.messages-li').forEach(function(messageLi) {
         const deleteBtn = messageLi.querySelector('.delete-btn');
         const messageTextWrapper = messageLi.querySelector('.message-text-wrapper'); 
-
+        
         messageLi.addEventListener('contextmenu', function(e) {
             e.preventDefault();
             if (deleteBtn) {
                 deleteBtn.classList.remove('display-none');
             }
         });
-
+        
         messageLi.addEventListener('click', function() {
             if (deleteBtn) {
                 deleteBtn.classList.add('display-none');
             }
         });
-
+        
         messageLi.addEventListener('dblclick', function() {
             if (deleteBtn) {
                 deleteBtn.classList.remove('display-none');
             }
         });
-
+        
         if (deleteBtn) {
             deleteBtn.addEventListener('click', function() {
                 messageLi.remove();
@@ -73,7 +106,7 @@ const getChatFromStorage = () => {
         newMessageImg.setAttribute('alt', 'ZakiyDev');
         newMessageImg.setAttribute('width', 70);
         newMessageImg.setAttribute('height', 70);
-        newMessageImg.src = localStorage.getItem("UserImgSource") || 'https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg';
+        newMessageImg.src = localStorage.getItem("UserImgSource") || 'img/users-img/steve-jobs.jpg';
         newMessageLi.appendChild(newMessageImg);
         
         if (chat) {
@@ -124,14 +157,14 @@ const getChatFromStorage = () => {
             deleteChatFromStorage(chat); 
         });
         newMessageLi.appendChild(deleteBtn);
-
+        
         newMessageLi.addEventListener('contextmenu', () => {
             deleteBtn.classList.remove('display-none');
         });
         newMessageLi.addEventListener('click', () => {
             deleteBtn.classList.add('display-none');
         });
-
+        
         messagesUl.appendChild(newMessageLi);
     });
 };
@@ -149,7 +182,7 @@ const messageSendFunc = () => {
     newMessageImg.setAttribute('alt', 'ZakiyDev');
     newMessageImg.setAttribute('width', 70);
     newMessageImg.setAttribute('height', 70);
-    newMessageImg.src = localStorage.getItem("UserImgSource") || 'https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg';
+    newMessageImg.src = localStorage.getItem("UserImgSource") || 'img/users-img/steve-jobs.jpg';
     
     const newMessageHeaderTwo = document.createElement('h2');
     newMessageHeaderTwo.innerHTML = messageSenderInput.value;
@@ -195,7 +228,7 @@ imgSendinput.onchange = () => {
     if (!file) return; 
     
     const fileType = file.type;
-
+    
     if (fileType.startsWith('image/')) {
         mediaType = 'image';
         const imageUrl = URL.createObjectURL(file);
@@ -247,7 +280,7 @@ imgSendBtn.addEventListener('click', () => {
     img.setAttribute('alt', 'ZakiyDev');
     img.setAttribute('width', 70);
     img.setAttribute('height', 70);
-    img.src = localStorage.getItem("UserImgSource") || 'https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg';
+    img.src = localStorage.getItem("UserImgSource") || 'img/users-img/steve-jobs.jpg';
     
     const mediaElement = sendingImg.querySelector('img') || sendingImg.querySelector('audio') || sendingImg.querySelector('video');
     

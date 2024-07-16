@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +23,9 @@
                 </div>
             </div>
             <div class="head-top-right">
-                <img class="active-user-img" id="activeUserImg" src="img/users-img/tom-holland.jpg" alt="Tom Holland" width="50" height="50">
+                <img class="active-user-img" id="activeUserImg" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="User" width="50" height="50">
                 <div class="user-info-wrapper">
-                    <p class="user-name">Tom Holland</p>
+                    <p class="user-name">Elon Musk</p>
                     <p class="user-status online">Online</p>
                 </div>
             </div>
@@ -37,11 +37,11 @@
             <div class="users">
                 <ul class="users-ul" id="usersUl">
                     <li class="users-li">
-                        <a class="users-li-a" href="user-tom-holland.html">
+                        <a class="users-li-a" href="other-user.html">
                             <div class="user-img-wrapper">
-                                <img class="user-img" src="img/users-img/tom-holland.jpg" alt="Tom Holland" width="50" height="50">
+                                <img class="user-img" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="User" width="50" height="50">
                                 <div class="user-info-wrapper">
-                                    <p class="user-name">Tom Holland</p>
+                                    <p class="user-name">Elon Musk</p>
                                     <p class="user-status online">Online</p>
                                 </div>
                             </div>
@@ -52,12 +52,12 @@
             
             <div class="chat">
                 <ul class="messages-ul" id="messagesUl" style="list-style-type: none;">
-                    <div class="today-date-wrapper">
-                        <p class="today-date">Bugun</p>
+                    <div class="today-date-wrapper" id="todayDateWrapper">
+                        <p class="today-date" id="todayDate">Bugun</p>
                     </div>
                     
                     <li class="messages-li">
-                        <img class="user-img chat-user-img" src="img/users-img/tom-holland.jpg" alt="Tom Holland" width="70" height="70">
+                        <img class="user-img chat-user-img" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="User" width="70" height="70">
                         <div class="message-text-wrapper">
                             <h2 class="user-message messages">Hello Bro.</h2>
                             <button class="delete-btn display-none">
@@ -66,7 +66,7 @@
                         </div>
                     </li>
                     <li class="messages-li">
-                        <img class="user-img chat-user-img" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" id="loggedUserImg" alt="Tom Holland" width="70" height="70">
+                        <img class="user-img chat-user-img" src="img/users-img/steve-jobs.jpg" id="loggedUserImg" alt="User" width="70" height="70">
                         <div class="message-text-wrapper">
                             <h2 class="other-user-message messages">Hello.</h2>
                             <button class="delete-btn display-none">
@@ -75,7 +75,7 @@
                         </div>
                     </li>
                     <li class="messages-li">
-                        <img class="user-img chat-user-img" src="img/users-img/tom-holland.jpg" alt="Tom Holland" width="70" height="70">
+                        <img class="user-img chat-user-img" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="User" width="70" height="70">
                         <div class="message-text-wrapper">
                             <h2 class="user-message messages">How Are You ?</h2>
                             <button class="delete-btn display-none">
@@ -84,7 +84,7 @@
                         </div>
                     </li>
                     <li class="messages-li">
-                        <img class="user-img chat-user-img" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" id="loggedUserImg" alt="Tom Holland" width="70" height="70">
+                        <img class="user-img chat-user-img" src="img/users-img/steve-jobs.jpg" id="loggedUserImg" alt="User" width="70" height="70">
                         <div class="message-text-wrapper">
                             <h2 class="other-user-message messages">Good 😑.</h2>
                             <button class="delete-btn display-none">
@@ -93,7 +93,7 @@
                         </div>
                     </li>
                     <li class="messages-li">
-                        <img class="user-img chat-user-img" src="img/users-img/tom-holland.jpg" alt="Tom Holland" width="70" height="70">
+                        <img class="user-img chat-user-img" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="User" width="70" height="70">
                         <div class="message-text-wrapper">
                             <h2 class="user-message messages">Why are you sad 🤨 ?</h2>
                             <button class="delete-btn display-none">
@@ -107,7 +107,7 @@
                 <div class="message-sender-inputs-wrapper">
                     <div class="wrapper">
                         <input type="text" id="messageSenderInput" class="messageSenderInput" placeholder="Xabar:">
-                        <input class="display-none" type="file" id="imgSendinput" accept="image/jpeg, image/png, image/jpg, image/webp, audio/*, video/*" multiple>
+                        <input class="display-none" type="file" id="imgSendinput" accept="image/jpeg, image/png, image/jpg, image/webp, image/gif, audio/*, video/*, application/zip" multiple>
                         <label class="imgUploadLabel" for="imgSendinput" id="imgSendInputsLabel"><i class="ri-upload-2-line imgUploadIcon"></i></label>
                         <button class="showEmojisBtn" id="showEmojisBtn"><i class="ri-emoji-sticker-line emojiIcon"></i></button>
                         <button class="senderBtn" id="senderBtn">
@@ -133,6 +133,15 @@
     </div>
     
     <div class="overlay display-none" id="overlay"></div>
+    <div class="date-modal" id="dateModal">
+        <div class="date-modal-top">
+            <h2 class="date-modal-title">Sanani Belgilang:</h2>
+            <div class="date-close-btn" id="dateCloseBtn">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+        <input type="date" class="data-selector-input" id="selectDateInput">
+    </div>
     
     <script src="js/app.js"></script>
     <script src="js/chat.js"></script>

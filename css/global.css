@@ -236,6 +236,7 @@ img {
     display: flex;
     right: 690px;
     top: 100px;
+    z-index: 1;
     position: fixed;
     margin-left: auto;
     padding-top: 20px;
@@ -296,6 +297,7 @@ img {
 
 .messages {
     color: #fff;
+    max-width: 600px;
     padding: 5px 30px;
     border-radius: 50px;
     background-color: #ff7500;
@@ -398,13 +400,20 @@ img {
 }
 
 .emojiContainer {
+    z-index: 1;
     right: 330px;
     width: 300px;
+    display: flex;
+    flex-wrap: wrap;
     bottom: 100px;
     height: 290px;
+    overflow: auto;
     cursor: pointer;
     font-size: 20px;
     position: fixed;
+    max-width: 300px;
+    max-height: 290px;
+    overflow-x: hidden;
     padding: 10px 10px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255, 70%);
@@ -500,6 +509,62 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid #fff;
     transition: all 0.3s ease;
     background-color: transparent;
+}
+
+.date-modal {
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    /* z-index: 100; */
+    color: #fff;
+    display: none;
+    position: fixed;
+    padding-top: 10px;
+    align-items: center;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    background-color: #ff7500;
+    justify-content: space-between;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+
+.date-modal-top {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+
+.date-modal-title {
+    color: #fff;
+    margin-right: 100px;
+}
+
+.date-close-btn {
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.data-selector-input {
+    width: 200px;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 10px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.data-selector-input:focus {
+    outline: none;
 }
 
 .sendingImg {
