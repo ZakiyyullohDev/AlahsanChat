@@ -108,10 +108,11 @@ img {
 }
 /* HEADER > HEAD-TOP-RIGHT */
 
-.head-top-right {
+.other-user-link {
     display: flex;
     margin-left: 50px;
     align-items: center;
+    text-decoration: none;
     justify-content: space-between;
 }
 
@@ -156,6 +157,7 @@ img {
 .users-li {
     width: 480px;
     display: flex;
+    cursor: pointer;
     align-items: center;
     padding: 10px 0 13px 15px;
     justify-content: space-between;
@@ -219,6 +221,10 @@ img {
 
 .online {
     color: rgb(20, 223, 20);
+}
+
+.offline {
+    color: #ffff;
 }
 
 
@@ -528,14 +534,11 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     transform: translate(-50%, -50%);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    
 }
 
 .date-modal-top {
     display: flex;
-    padding-top: 10px;
     align-items: center;
-    padding-bottom: 10px;
     justify-content: space-between;
 }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +23,13 @@
                 </div>
             </div>
             <div class="head-top-right">
-                <img class="active-user-img" id="activeUserImg" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="User" width="50" height="50">
-                <div class="user-info-wrapper">
-                    <p class="user-name">Elon Musk</p>
-                    <p class="user-status online">Online</p>
-                </div>
+                <a href="other-user.html" class="other-user-link">
+                    <img class="active-user-img otherUserChatImg" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="User" width="50" height="50">
+                    <div class="user-info-wrapper">
+                        <p class="user-name otherUserName">Elon Musk</p>
+                        <p class="user-status online otherUserStatus">Online</p>
+                    </div>
+                </a>
             </div>
         </div>
     </header>
@@ -36,12 +38,45 @@
         <div class="application-wrapper">
             <div class="users">
                 <ul class="users-ul" id="usersUl">
-                    <li class="users-li">
-                        <a class="users-li-a" href="other-user.html">
+                    <li class="users-li userLi">
+                        <a class="users-li-a userLiA">
                             <div class="user-img-wrapper">
                                 <img class="user-img" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="User" width="50" height="50">
                                 <div class="user-info-wrapper">
                                     <p class="user-name">Elon Musk</p>
+                                    <p class="user-status offline">Offline</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="users-li userLi">
+                        <a class="users-li-a userLiA">
+                            <div class="user-img-wrapper">
+                                <img class="user-img" src="img/users-img/BillGates.jpg" alt="User" width="50" height="50">
+                                <div class="user-info-wrapper">
+                                    <p class="user-name">Bill Gates</p>
+                                    <p class="user-status offline">Offline</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="users-li userLi">
+                        <a class="users-li-a userLiA">
+                            <div class="user-img-wrapper">
+                                <img class="user-img" src="img/users-img/twitterCeo.jpg" alt="User" width="50" height="50">
+                                <div class="user-info-wrapper">
+                                    <p class="user-name">Jack Dorsey</p>
+                                    <p class="user-status online">Online</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="users-li userLi">
+                        <a class="users-li-a userLiA">
+                            <div class="user-img-wrapper">
+                                <img class="user-img" src="img/users-img/Thanos.jpg" alt="User" width="50" height="50">
+                                <div class="user-info-wrapper">
+                                    <p class="user-name">Thanos</p>
                                     <p class="user-status online">Online</p>
                                 </div>
                             </div>
@@ -57,7 +92,7 @@
                     </div>
                     
                     <li class="messages-li">
-                        <img class="user-img chat-user-img" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="User" width="70" height="70">
+                        <img class="user-img chat-user-img otherUserChatImg" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="User" width="70" height="70">
                         <div class="message-text-wrapper">
                             <h2 class="user-message messages">Hello Bro.</h2>
                             <button class="delete-btn display-none">
@@ -75,7 +110,7 @@
                         </div>
                     </li>
                     <li class="messages-li">
-                        <img class="user-img chat-user-img" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="User" width="70" height="70">
+                        <img class="user-img chat-user-img otherUserChatImg" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="User" width="70" height="70">
                         <div class="message-text-wrapper">
                             <h2 class="user-message messages">How Are You ?</h2>
                             <button class="delete-btn display-none">
@@ -93,7 +128,7 @@
                         </div>
                     </li>
                     <li class="messages-li">
-                        <img class="user-img chat-user-img" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="User" width="70" height="70">
+                        <img class="user-img chat-user-img otherUserChatImg" src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="User" width="70" height="70">
                         <div class="message-text-wrapper">
                             <h2 class="user-message messages">Why are you sad 🤨 ?</h2>
                             <button class="delete-btn display-none">
@@ -145,5 +180,6 @@
     
     <script src="js/app.js"></script>
     <script src="js/chat.js"></script>
+    <script src="js/other-user.js"></script>
 </body>
 </html>
